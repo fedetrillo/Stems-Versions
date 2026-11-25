@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.1 — 2026-11-25
+
+- A short getting-started guide: the first time it opens it asks for your language, then walks
+  you through the window in it. The **Guide** button brings it back.
+
 ## 1.0.0 — 2026-11-25
 
 - First release: a table of channels against versions, and one export that renders them all with

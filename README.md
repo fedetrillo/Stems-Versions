@@ -39,6 +39,9 @@ them all with LUNA's own export. Your mix is put back exactly as it was when it 
 2. Check the groups and the dots, and add any version you need with **+**.
 3. Tick the versions you want, choose the range and where to save, and press **Export**.
 
+The first time it opens, it asks for your language and then a short guide walks you through the
+window in it; the **Guide** button brings it back whenever you need it.
+
 Level changes are made with each channel's trim, so they also work on channels with volume
 automation. Stems pass through the main bus, so its processing (a bus compressor, say) acts on
 each stem on its own.
