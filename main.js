@@ -6,7 +6,7 @@
 (() => {
   const $ = (id) => document.getElementById(id);
   const L = window.SVLogic;
-  const VERSION = '1.0.1';
+  const VERSION = '1.0.2';
   const KEY = 'com.fedetrillo.stemsversions.';
   const store = {
     get: (k) => { try { return JSON.parse(localStorage.getItem(KEY + k)); } catch { return null; } },
@@ -477,7 +477,7 @@
         rows: rows.map((r) => ({ name: r.name, group: r.group, bus: r.bus, trim: !!trimOf(r.ch), mute: !!muteOf(r.ch), orig: orig[r.id] })),
         versions: versions.map((v) => ({ id: v.id, on: v.on, name: v.builtin ? undefined : v.name, cells: Object.keys(v.cells).length })),
         pending: !!store.get(skey('pending')), lastFile, log: log.slice(-40) }, null, 2);
-      try { await navigator.clipboard.writeText(text); say('report', {}, 'ok', 3000); } catch { console.log(text); }
+      try { if (await AddOnCopy(text)) say('report', {}, 'ok', 5000); } catch { console.log(text); }
     };
 
     $('song').value = store.get(skey('song')) ?? s.name?.value ?? '';

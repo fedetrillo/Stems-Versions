@@ -1,8 +1,7 @@
 # Stems & Versions for LUNA
 
-Stems & Versions exports every version of a song in one go. A table shows the session's
-channels against the versions you deliver, a dot for what plays in each, and one button renders
-them all with LUNA's own export. Your mix is put back exactly as it was when it ends.
+Every version of a song in one go: mix, instrumental, a cappella, TV mix, vocal up and down, and
+stems, from one table of what plays in each. Your mix is put back exactly as it was.
 
 <p>
   <img src="docs/screenshot-dark.png" alt="Stems & Versions, dark theme" width="460">
